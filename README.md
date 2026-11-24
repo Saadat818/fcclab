@@ -11,6 +11,7 @@
 3. В настройках указана бесплатная модель NVIDIA Nemotron 3 Ultra через OpenRouter.
 4. Claude Code запущен из отдельной папки. На тестовый вопрос получен ответ.
 5. В статистике OpenRouter отображались запросы и расходы $0.00 за выбранный период; в разделе статистики показана модель Nemotron 3 Ultra.
+6. В Claude Code подключены два MCP-сервера: `time` для времени и часовых поясов и `fetch` для чтения веб-страниц. Оба проверены в действии: получено время Бишкека и прочитана страница example.com.
 
 ## Скриншоты
 
@@ -18,6 +19,8 @@
 - [Настройка модели на платформе Free Claude Code](screenshots/platform-model-config.png)
 - [Модель NVIDIA в OpenRouter](screenshots/openrouter-nvidia.png)
 - [Активность OpenRouter и модель](screenshots/openrouter-activity.png)
+- [Подключённые MCP-серверы](screenshots/mcp-connected.png)
+- [Проверка обоих MCP-серверов](screenshots/mcp-tests.png)
 - [Проверка ответа крупным планом](screenshots/terminal-test.png)
 - [Карточка модели NVIDIA в OpenRouter](screenshots/nvidia-model.png)
 
@@ -27,4 +30,4 @@
 
 NVIDIA NIM и OpenRouter — разные провайдеры. Здесь используется модель NVIDIA через OpenRouter; прямое подключение к NVIDIA NIM не настроено, поскольку не удалось завершить проверку номера. Free Claude Code — сторонний проект, не официальный продукт Anthropic.
 
-Условия отдельного задания по MCP и необходимость MCP-сервера пока не установлены; этот репозиторий описывает выполненную настройку и не заявляет о создании MCP-сервера.
+Для работы использованы два готовых MCP-сервера; собственный сервер не создавался. Их подключение выполнено в отдельной учебной папке Claude Code.
